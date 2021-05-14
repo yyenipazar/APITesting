@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
+<testng-results skipped="0" failed="0" ignored="14" total="15" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2334" started-at="2021-04-27T04:01:29Z" finished-at="2021-04-27T04:01:32Z">
+  <suite name="Default suite" duration-ms="2037" started-at="2021-05-14T14:32:31Z" finished-at="2021-05-14T14:32:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2334" started-at="2021-04-27T04:01:29Z" finished-at="2021-04-27T04:01:32Z">
-      <class name="AlertAware.api.test.SignIn">
-        <test-method status="PASS" signature="verifyTwoFactorAuthWithInvalidCredentials()[pri:8, instance:AlertAware.api.test.SignIn@548a9f61]" name="verifyTwoFactorAuthWithInvalidCredentials" duration-ms="2297" started-at="2021-04-27T00:01:29Z" finished-at="2021-04-27T00:01:32Z">
+    <test name="Default test" duration-ms="2037" started-at="2021-05-14T14:32:31Z" finished-at="2021-05-14T14:32:33Z">
+      <class name="AlertAware.api.test.Organizations">
+        <test-method status="PASS" signature="deleteASpecificUserOrganizatiEntry()[pri:15, instance:AlertAware.api.test.Organizations@548a9f61]" name="deleteASpecificUserOrganizatiEntry" duration-ms="2005" started-at="2021-05-14T10:32:31Z" finished-at="2021-05-14T10:32:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTwoFactorAuthWithInvalidCredentials -->
-      </class> <!-- AlertAware.api.test.SignIn -->
+        </test-method> <!-- deleteASpecificUserOrganizatiEntry -->
+      </class> <!-- AlertAware.api.test.Organizations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

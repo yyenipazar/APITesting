@@ -13,7 +13,7 @@ import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 
 public class SignIn {
-	@Test(priority=1,enabled=false)
+	@Test(priority=1,enabled=true)
 	public void loginAsAUserWithValidCredentials(){
 		
 		RestAssured.baseURI="https://devapi.alertaware.com";	
@@ -38,7 +38,7 @@ public class SignIn {
 				//if we can get a token, it means login is possible with this credentials
 				Assert.assertNotEquals(token, null);
 	}
-	@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true)
 	public void loginAsAUserWithInValidCredentials(){
 		
 		RestAssured.baseURI="https://devapi.alertaware.com";
@@ -61,7 +61,7 @@ public class SignIn {
 				//if we can not get a token as null, it means login is not possible with this credentials
 				Assert.assertEquals(token, null);
 	}
-	@Test(priority=3,enabled=false)
+	@Test(priority=3,enabled=true)
 	public void logoutCurrentUser(){
 		
 			RestAssured.baseURI="https://devapi.alertaware.com";	
@@ -77,7 +77,7 @@ public class SignIn {
 		
 		
 	
-	@Test(priority=4,enabled=false)
+	@Test(priority=4,enabled=true)
 	public void logoutInvalidUser(){
 	
 		RestAssured.baseURI="https://devapi.alertaware.com";	
@@ -159,7 +159,7 @@ public class SignIn {
 				//if we can get a token, it means login is possible with this credentials
 				Assert.assertNotEquals(token, null);
 	}
-	@Test(priority=8,enabled=true)
+	@Test(priority=8,enabled=false)
 	public void verifyTwoFactorAuthWithInvalidCredentials(){
 		RestAssured.baseURI="https://devapi.alertaware.com";	
 		

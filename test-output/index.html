@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AlertAware.api.test.SignIn" hash-for-method="verifyTwoFactorAuthWithInvalidCredentials">verifyTwoFactorAuthWithInvalidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AlertAware.api.test.Organizations" hash-for-method="deleteASpecificUserOrganizatiEntry">deleteASpecificUserOrganizatiEntry</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">AlertAware.api.test.SignIn</span>
+              <span class="class-name">AlertAware.api.test.Organizations</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTwoFactorAuthWithInvalidCredentials">
-                  </a> <!-- verifyTwoFactorAuthWithInvalidCredentials -->
-                  <span class="method-name">verifyTwoFactorAuthWithInvalidCredentials</span>
+                  <a name="deleteASpecificUserOrganizatiEntry">
+                  </a> <!-- deleteASpecificUserOrganizatiEntry -->
+                  <span class="method-name">deleteASpecificUserOrganizatiEntry</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/g4/0hwkqyh15b55lq5zjkh2vfq40000gp/T/testng-eclipse--1533588055/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/g4/0hwkqyh15b55lq5zjkh2vfq40000gp/T/testng-eclipse-1599122621/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +144,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;AlertAware.api.test.SignIn&quot;/&gt;
+      &lt;class name=&quot;AlertAware.api.test.Organizations&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,9 +186,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyTwoFactorAuthWithInvalidCredentials')
-data.setCell(0, 2, 'AlertAware.api.test.SignIn')
-data.setCell(0, 3, 2297);
+data.setCell(0, 1, 'deleteASpecificUserOrganizatiEntry')
+data.setCell(0, 2, 'AlertAware.api.test.Organizations')
+data.setCell(0, 3, 2005);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -208,25 +208,39 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">14 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">AlertAware.api.test.SignIn</span>
+              <span class="ignored-class-name">AlertAware.api.test.Organizations</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">logoutCurrentUser</span>
+                <span class="ignored-method-name">createANewUserOrganizationEntry</span>
                 <br/>
-                <span class="ignored-method-name">loginAsAUserWithValidCredentials</span>
+                <span class="ignored-method-name">returnsAnOrganizationsDetailsOnASingleUUID</span>
                 <br/>
-                <span class="ignored-method-name">get2fa</span>
+                <span class="ignored-method-name">updateASpecificOrganizationDetailEntry</span>
                 <br/>
-                <span class="ignored-method-name">verifyTwoFactorAuth</span>
+                <span class="ignored-method-name">returnAllOrganizationDetailsEntries</span>
                 <br/>
-                <span class="ignored-method-name">logoutInvalidUser</span>
+                <span class="ignored-method-name">returnAllOrganizationsEntries</span>
                 <br/>
-                <span class="ignored-method-name">loginAsAUserWith2fa</span>
+                <span class="ignored-method-name">returnAnOrganizationBasedOnASingleUUID</span>
                 <br/>
-                <span class="ignored-method-name">loginAsAUserWithInValidCredentials</span>
+                <span class="ignored-method-name">updateASpecificOrganizationEntry</span>
+                <br/>
+                <span class="ignored-method-name">updateASpecificUserOrganizationEntry</span>
+                <br/>
+                <span class="ignored-method-name">returnsAnUserOrganizationBasedOnASingleID</span>
+                <br/>
+                <span class="ignored-method-name">createANewOrganizationEntry</span>
+                <br/>
+                <span class="ignored-method-name">createANewOrganizationDetailEntry</span>
+                <br/>
+                <span class="ignored-method-name">deleteASpecificOrganizationDetailEntry</span>
+                <br/>
+                <span class="ignored-method-name">returnAllUserOrganizationEntries</span>
+                <br/>
+                <span class="ignored-method-name">deleteASpecificOrganizationEntry</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -238,9 +252,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">AlertAware.api.test.SignIn</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">AlertAware.api.test.Organizations</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyTwoFactorAuthWithInvalidCredentials</span>
+                <span class="method-name">deleteASpecificUserOrganizatiEntry</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
